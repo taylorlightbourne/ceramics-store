@@ -6,6 +6,7 @@ import { Provider } from "react-redux";
 import { createStore, applyMiddleware } from "redux";
 import rootReducer from "./reducers/rootReducer";
 import logger from "redux-logger";
+import 'font-awesome/css/font-awesome.min.css';
 
 const store = createStore(rootReducer, applyMiddleware(logger));
 ReactDOM.render(
