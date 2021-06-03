@@ -13,16 +13,23 @@ const ProductItem = props => {
             id: props.id,
             name: props.name,
             amount: amount,
-            price: props.price
+            price: props.price,
+            image: props.image
         });
     };
     
     return (
     <li className="product">
-        <div>
-            <h3>{props.name}</h3>
-            <div className="description">{props.description}</div>
-            <div className="price">{price}</div>
+        <div className="singleProduct">
+            <div>
+                <div className="image">{props.image}</div>
+            </div>
+            <div>
+                <h3>{props.name}</h3>
+                <div className="description">{props.description}</div>
+                <div className="price">{price}</div>
+                <button id="view">View</button>
+            </div>
         </div>
         <div>
             <ProductItemForm onAddToCart={addToCartHandler} />
