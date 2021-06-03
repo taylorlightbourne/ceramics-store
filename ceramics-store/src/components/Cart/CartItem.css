@@ -37,7 +37,18 @@
     display: flex;
     flex-direction: column;
   }
-  
+  .cart-productInfo {
+    margin-left: 5%;
+  }
+  .cart-image {
+    width: min-content;
+    height: min-content;
+  }
+  .cart-productContainer {
+    display: flex;
+    flex-direction: row;
+  }
+
   @media (min-width: 768px) {
     .cart-actions {
       flex-direction: row;

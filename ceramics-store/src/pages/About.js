@@ -1,4 +1,5 @@
 import Header from '../components/Layout/Header';
+import Footer from '../components/Layout/Footer';
 import './About.css';
 
 
@@ -6,8 +7,10 @@ function About() {
 
 
   return (
-        <Header>
-        </Header>
+    <div>
+      <Header />
+      <Footer />
+    </div>
   );
 }
 

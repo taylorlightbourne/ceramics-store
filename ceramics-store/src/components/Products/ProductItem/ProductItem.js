@@ -14,13 +14,13 @@ const ProductItem = props => {
             name: props.name,
             amount: amount,
             price: props.price,
-            image: props.image
+            image: props.image,
         });
     };
     
     return (
     <li className="product">
-        <div className="singleProduct">
+        <div className="productContainer">
             <div>
                 <div className="image">{props.image}</div>
             </div>

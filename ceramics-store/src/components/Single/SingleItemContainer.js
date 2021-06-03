@@ -5,14 +5,12 @@ const CartItem = (props) => {
 
   return (
     <li className='cart-item'>
-      <div className="cart-productContainer">
-        <div className="cart-image">{props.image}</div>
-        <div className="cart-productInfo">
-          <h3>{props.name}</h3>
-          <div className="cart-summary">
-            <span className="cart-price">{price}</span>
-            <span className="cart-amount">x {props.amount}</span>
-          </div>
+      <div className="cart-image">{props.image}</div>
+      <div>
+        <h2>{props.name}</h2>
+        <div className="cart-summary">
+          <span className="cart-price">{price}</span>
+          <span className="cart-amount">x {props.amount}</span>
         </div>
       </div>
       <div className="cart-actions">
