@@ -13,7 +13,7 @@
     color: #363636;
   }
   
-  .summary {
+  .cart-summary {
     width: 10rem;
     display: flex;
     justify-content: space-between;
@@ -33,13 +33,13 @@
     color: #363636;
   }
   
-  .actions {
+  .cart-actions {
     display: flex;
     flex-direction: column;
   }
   
   @media (min-width: 768px) {
-    .actions {
+    .cart-actions {
       flex-direction: row;
     }
   }

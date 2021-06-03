@@ -7,10 +7,9 @@ import 'font-awesome/css/font-awesome.min.css';
 const HeaderCartButton = props => {
     const cartCtx = useContext(CartContext);
 
-    const numberOfCartItems = cartCtx.items.length;
-    // const numberOfCartItems = cartCtx.items.reduce((currentNumber, item) => {
-        // return currentNumber + item.amount;
-        // }, 0);
+    const numberOfCartItems = cartCtx.items.reduce((currentNumber, item) => {
+        return currentNumber + item.amount;
+        }, 0);
 
     return (
         <button className="button" onClick={props.onClick}>
