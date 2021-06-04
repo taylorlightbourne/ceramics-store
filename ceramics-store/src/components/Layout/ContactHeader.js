@@ -1,31 +1,27 @@
 import { Fragment } from 'react';
 import { Link } from "react-router-dom";
-import HeaderCartButton from './HeaderCartButton';
-import cheetahHomepage from '../../assets/Background1.jpg';
-import '../Layout/Header.css';
+import Background from '../../assets/Background3.jpg';
+import '../Layout/ContactHeader.css';
 import logo from '../../assets/logo.png';
 
 
 const Header = props => {
     return (
         <Fragment>
-            <header className="header">
-                <div className="logo">
+            <header className="contact-header">
+                <div className="contact-logo">
                     <img src={logo} alt="" />
                 </div>
-                <div className="links">
+                <div className="about-links">
                     <ul>
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/about">About</Link></li>
                         <li><Link to="/contact">Contact</Link></li>
                     </ul>
                 </div>
-                <div className="cartBtn">
-                    <HeaderCartButton onClick={props.onShowCart}/>
-                </div>
             </header>
-            <div className="main-image">
-                <img src={cheetahHomepage} alt="" />
+            <div className="contact-main-image">
+                <img src={Background} alt="" />
             </div>
         </Fragment>
     )

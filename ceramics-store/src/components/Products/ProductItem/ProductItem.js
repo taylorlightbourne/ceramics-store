@@ -33,7 +33,7 @@ const ProductItem = (props) => {
                 <h3>{props.name}</h3>
                 <div className="description">{props.description}</div>
                 <div className="price">{price}</div>
-                <ViewButton onClick={() => selectProduct(dispatch, props)}/>
+                <ViewButton onClick={() => selectProduct(dispatch, props)} />
             </div>
         </div>
         <div>

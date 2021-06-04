@@ -1,13 +1,18 @@
 
-import Header from '../components/Layout/Header';
+import Header from '../components/Layout/ContactHeader';
 import Footer from '../components/Layout/Footer';
+import './Contact.css';
+
 
 
 function Contact() {
 
   return (
-      <div>
+    <div>
           <Header />
+            <main className="contact-contents">
+
+            </main>
           <Footer />
       </div>
   );

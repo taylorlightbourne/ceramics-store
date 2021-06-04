@@ -1,0 +1,22 @@
+.about-info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    max-width: 45rem;
+    width: 90%;
+    margin: auto;
+    margin-top: -40rem;
+    margin-bottom: 10rem;
+    position: relative;
+    background-color: rgb(250, 250, 250);
+    color: #383838;
+    border-radius: 14px;
+    padding: 1rem;
+    box-shadow: 0 1px 18px 10px rgba(0, 0, 0, 0.25);
+}
+#profile {
+    margin-top: 5%;
+    width: 300px;
+    height: 300px;
+}

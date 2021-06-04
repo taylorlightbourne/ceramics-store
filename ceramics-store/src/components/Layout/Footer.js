@@ -1,10 +1,9 @@
-import { Fragment } from 'react';
 import '../Layout/Footer.css';
 
 
 const Footer = props => {
     return (
-        <Fragment>
+        <div>
             <footer className="footer">
                 <h3>Quick Links</h3>
                 <ul>
@@ -13,7 +12,7 @@ const Footer = props => {
                     <a href="/contact"><li>Home</li></a>
                 </ul>
             </footer>
-        </Fragment>
+        </div>
     )
 };
 
