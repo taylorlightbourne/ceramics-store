@@ -1,5 +1,5 @@
 import { Fragment } from 'react';
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Background from '../../assets/Background3.jpg';
 import '../Layout/ContactHeader.css';
 import logo from '../../assets/logo.png';
@@ -12,11 +12,11 @@ const Header = props => {
                 <div className="contact-logo">
                     <img src={logo} alt="" />
                 </div>
-                <div className="about-links">
+                <div className="contact-links">
                     <ul>
-                        <li><Link to="/">Home</Link></li>
-                        <li><Link to="/about">About</Link></li>
-                        <li><Link to="/contact">Contact</Link></li>
+                        <li><NavLink to="/" className="main-nav" activeClassName="main-nav-active">Home</NavLink></li>
+                        <li><NavLink to="/about" className="main-nav" activeClassName="main-nav-active">About</NavLink></li>
+                        <li><NavLink to="/contact" className="main-nav" activeClassName="main-nav-active">Contact</NavLink></li>
                     </ul>
                 </div>
             </header>

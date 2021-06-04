@@ -90,7 +90,7 @@ const CERAMIC_PRODUCTS = [
 
 
 
-const AvailableProducts = () => {
+const AvailableProducts = (props) => {
     const ceramicsList = CERAMIC_PRODUCTS.map((item) => (
     <ProductItem 
     key={item.id} 
@@ -98,7 +98,8 @@ const AvailableProducts = () => {
     name={item.name} 
     description={item.description} 
     price={item.price} 
-    image={item.image}
+    image={item.image} 
+    onClick={props.onClick}
     />
     ));
 

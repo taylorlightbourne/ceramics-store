@@ -10,16 +10,22 @@ export default function SingleProduct(props) {
     return (
         <PopUp onClose={props.onClose}>
         <div className="popup-contents">
-            <div className="popup-image">
-                <div>{selectedProduct.image} </div>
+            <div className="popup-single-product">
+                <div className="popup-image">
+                    <div>{selectedProduct.image} </div>
+                </div>
+                <div className="popup-info">
+                    <h2>{selectedProduct.name}</h2>
+                    <h3>Details: {selectedProduct.description}</h3>
+                    <h3>Price: ${selectedProduct.price.toFixed(2)}</h3>
+                </div>  
             </div>
-            <div className="popup-info">
-                <h2>{selectedProduct.name}</h2>
-                <h3>Details: {selectedProduct.description}</h3>
-                <h3>Price: ${selectedProduct.price.toFixed(2)}</h3>
-            </div>  
+            <div className="actions">
+                <button className="closeButton" onClick={props.onClose}>Close</button>
+                <button className="button">Add to Cart</button>
+            </div>
         </div>
         </PopUp>
     );
-}
+};
 

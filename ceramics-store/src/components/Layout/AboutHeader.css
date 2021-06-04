@@ -30,4 +30,6 @@
   flex-direction: row;
   text-decoration: none;
   list-style: none;
+  justify-content: center;
+  text-align: center;
 }

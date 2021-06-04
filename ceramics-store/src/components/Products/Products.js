@@ -10,8 +10,7 @@ const Products = (props) => {
     return (
         <Fragment>
             <ProductSummary />
-            <AvailableProducts />
-            <ViewButton onClick={props.onShowPopUp}/>
+            <AvailableProducts onClick={props.onShowPopUp} />
         </Fragment>
     )
 };
