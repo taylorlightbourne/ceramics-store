@@ -29,3 +29,12 @@
     color: tomato;
   }
 
+  .contact-links ul {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    list-style: none;
+    justify-content: center;
+    text-align: center;
+    margin-right: 41rem;
+  }

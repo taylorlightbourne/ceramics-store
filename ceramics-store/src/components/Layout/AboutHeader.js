@@ -6,6 +6,11 @@ import logo from '../../assets/logo.png';
 
 
 const Header = props => {
+    const linkStyle = {
+        margin: "1rem",
+        textDecoration: "none",
+        color: 'black',
+      };
     return (
         <Fragment>
             <header className="about-header">
@@ -14,9 +19,9 @@ const Header = props => {
                 </div>
                 <div className="about-links">
                     <ul>
-                        <li><Link to="/">Home</Link></li>
-                        <li><Link to="/about">About</Link></li>
-                        <li><Link to="/contact">Contact</Link></li>
+                        <li><Link to="/" style={linkStyle}>Home</Link></li>
+                        <li><Link to="/about" style={linkStyle}>About</Link></li>
+                        <li><Link to="/contact" style={linkStyle}>Contact</Link></li>
                     </ul>
                 </div>
             </header>

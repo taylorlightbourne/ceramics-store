@@ -6,7 +6,14 @@ import '../Layout/Header.css';
 import logo from '../../assets/logo.png';
 
 
+
 const Header = props => {
+    const linkStyle = {
+        margin: "1rem",
+        textDecoration: "none",
+        color: 'black'
+      };
+
     return (
         <Fragment>
             <header className="header">
@@ -15,9 +22,9 @@ const Header = props => {
                 </div>
                 <div className="links">
                     <ul>
-                        <li><NavLink to="/" className="main-nav" activeClassName="main-nav-active">Home</NavLink></li>
-                        <li><NavLink to="/about" className="main-nav" activeClassName="main-nav-active">About</NavLink></li>
-                        <li><NavLink to="/contact" className="main-nav" activeClassName="main-nav-active">Contact</NavLink></li>
+                        <li><NavLink to="/" style={linkStyle}>Home</NavLink></li>
+                        <li><NavLink to="/about" style={linkStyle}>About</NavLink></li>
+                        <li><NavLink to="/contact" style={linkStyle}>Contact</NavLink></li>
                     </ul>
                 </div>
                 <div className="cartBtn">
