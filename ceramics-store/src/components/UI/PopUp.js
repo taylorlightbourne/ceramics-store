@@ -11,7 +11,7 @@ const Backdrop = props => {
 const PopUpOverlay = props => {
     return (
     <div className="popup">
-        <div className="content">{props.children}</div>
+        <div className="singleItem-Content">{props.children}</div>
     </div>
     );
 };

@@ -2,8 +2,13 @@ import { useContext } from 'react';
 import './ProductItem.css';
 import ProductItemForm from './ProductItemForm';
 import CartContext from '../../../store/cart-context';
+import ViewButton from '../../Layout/ViewPopUpButton';
+import { selectProduct } from '../../../store/SingleProductAction';
+import { useDispatch } from 'react-redux';
 
-const ProductItem = props => {
+const ProductItem = (props) => {
+    const dispatch = useDispatch();
+
     const cartCtx = useContext(CartContext);
 
     const price = `$${props.price.toFixed(2)}`;
@@ -28,7 +33,7 @@ const ProductItem = props => {
                 <h3>{props.name}</h3>
                 <div className="description">{props.description}</div>
                 <div className="price">{price}</div>
-                <button id="view">View</button>
+                <ViewButton onClick={() => selectProduct(dispatch, props)}/>
             </div>
         </div>
         <div>

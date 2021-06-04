@@ -24,9 +24,9 @@
     height: 100%;
     object-fit: cover;
   }
-
-.links {
+.links ul {
   display: flex;
   flex-direction: row;
   text-decoration: none;
+  list-style: none;
 }
